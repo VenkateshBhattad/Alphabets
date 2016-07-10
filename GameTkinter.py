@@ -8,7 +8,6 @@ def onKeyPress(event):
 def talkTheChar(str):
     engine = pyttsx.init()
     engine.setProperty('rate', 100)
-    engine.setProperty('voice', 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_EN-US_ZIRA_11.0')
     engine.say(str)
     engine.runAndWait()
 root = Tk()
